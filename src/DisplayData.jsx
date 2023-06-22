@@ -4,25 +4,80 @@ function DisplayData({ champion }) {
   return (
     <div className="champion-card">
       <h3>{champion.name}</h3>
-      <p>HP: {champion.stats.hp}</p>
-      <p>HP per level: {champion.stats.hpperlevel}</p>
-      <p>MP: {champion.stats.mp}</p>
-      <p>MP per level: {champion.stats.mpperlevel}</p>
-      <p>Movespeed: {champion.stats.movespeed}</p>
-      <p>Armor: {champion.stats.armor}</p>
-      <p>Armor per level: {champion.stats.armorperlevel}</p>
-      <p>Spellblock: {champion.stats.spellblock}</p>
-      <p>Spellblock per level: {champion.stats.spellblockperlevel}</p>
-      <p>Attack Range: {champion.stats.attackrange}</p>
-      <p>HP Regen: {champion.stats.hpregen}</p>
-      <p>HP Regen per level: {champion.stats.hpregenperlevel}</p>
-      <p>MP Regen: {champion.stats.mpregen}</p>
-      <p>MP Regen per level: {champion.stats.mpregenperlevel}</p>
-      <p>Crit: {champion.stats.crit}</p>
-      <p>Crit per level: {champion.stats.critperlevel}</p>
-      <p>Attack Damage: {champion.stats.attackdamage}</p>
-      <p>Attack Damage per level: {champion.stats.attackdamageperlevel}</p>
-      <p>Attack Speed: {champion.stats.attackspeed}</p>
+      <div className="stat-container">
+        <p>
+          <span className="stat-label">HP:</span> {champion.stats.hp}
+        </p>
+        <p>
+          <span className="stat-label">HP per level:</span>{' '}
+          {champion.stats.hpperlevel}
+        </p>
+        <p>
+          <span className="stat-label">MP:</span> {champion.stats.mp}
+        </p>
+        <p>
+          <span className="stat-label">MP per level:</span>{' '}
+          {champion.stats.mpperlevel}
+        </p>
+        <p>
+          <span className="stat-label">Movespeed:</span>{' '}
+          {champion.stats.movespeed}
+        </p>
+        <p>
+          <span className="stat-label">Armor:</span> {champion.stats.armor}
+        </p>
+        <p>
+          <span className="stat-label">Armor per level:</span>{' '}
+          {champion.stats.armorperlevel}
+        </p>
+        <p>
+          <span className="stat-label">Spellblock:</span>{' '}
+          {champion.stats.spellblock}
+        </p>
+        <p>
+          <span className="stat-label">Spellblock per level:</span>{' '}
+          {champion.stats.spellblockperlevel}
+        </p>
+        <p>
+          <span className="stat-label">Attack Range:</span>{' '}
+          {champion.stats.attackrange}
+        </p>
+        <p>
+          <span className="stat-label">HP Regen:</span>{' '}
+          {champion.stats.hpregen}
+        </p>
+        <p>
+          <span className="stat-label">HP Regen per level:</span>{' '}
+          {champion.stats.hpregenperlevel}
+        </p>
+        <p>
+          <span className="stat-label">MP Regen:</span>{' '}
+          {champion.stats.mpregen}
+        </p>
+        <p>
+          <span className="stat-label">MP Regen per level:</span>{' '}
+          {champion.stats.mpregenperlevel}
+        </p>
+        <p>
+          <span className="stat-label">Crit:</span> {champion.stats.crit}
+        </p>
+        <p>
+          <span className="stat-label">Crit per level:</span>{' '}
+          {champion.stats.critperlevel}
+        </p>
+        <p>
+          <span className="stat-label">Attack Damage:</span>{' '}
+          {champion.stats.attackdamage}
+        </p>
+        <p>
+          <span className="stat-label">Attack Damage per level:</span>{' '}
+          {champion.stats.attackdamageperlevel}
+        </p>
+        <p>
+          <span className="stat-label">Attack Speed:</span>{' '}
+          {champion.stats.attackspeed}
+        </p>
+      </div>
     </div>
   );
 }
